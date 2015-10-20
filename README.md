@@ -1,4 +1,4 @@
-# compare-your-matches
+# Compare-your-matches
 Simple prototype to compare two different profiles shown for your preferences on match.com
 
 1. **Objective:**
@@ -12,8 +12,7 @@ Simple prototype to compare two different profiles shown for your preferences on
 
   * Button **Back** takes you back to the view where you can see all the matching profiles.
 
-3.The data used here is just test/randon data and the images are not my own and have 
-been taken from the internet for representation purposes only.
+3.The data used here is just test/random data and the images are not my own and have been taken from the internet for representation purposes only.
 
 4.Plugins and frameworks Used:
 
