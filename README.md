@@ -6,7 +6,7 @@ Simple prototype to compare two different profiles shown for your preferences on
 
 2. **Actions:**
   * Button **Click to Select** Shows the checkboxes on each of the matching profiles. 
-  One click of this button, Compare button will be visible but will be disabled until you select two profiles.
+  On click of this button, Compare button will be visible but will be disabled until you select two profiles.
 
   * Button **Compare** takes you to the comparing view where you can view/compare the details of the selected profiles.
 
