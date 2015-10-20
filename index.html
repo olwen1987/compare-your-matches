@@ -9,53 +9,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
-<style type="text/css">body .header{background: #247eff;}body .header .logo{width: 150px;height:75px}body .main-gallery .image .name{text-align: center; width: 250px;}body .main-gallery .image img{width: 250px; height: 350px;}body .main-gallery .image .bottom-panel{background: rgba(255, 255, 255, 0.8); width: 250px; position: absolute; height: 40px; bottom: 0;}body .main-gallery .image .bottom-panel input[type=checkbox]{margin: 10px; width: 20px; height: 20px;}body .main-gallery .row{margin: 0 auto; padding: 15px 0;}body .main-gallery .row + .row{padding-top: 0;}body .main-gallery.hide-bottom .bottom-panel{display: none;}body .main-gallery .controls{padding: 0 15px;}body .gallery{height: 90vh;}body .gallery .image-panel{text-align: center;}body .gallery .image-panel img{width: 250px; height: 350px; position: relative;}body .gallery .image-1, body .gallery .image-2{margin: inherit -15px; padding: 15px 0;}body .gallery .details{padding: 0 30px 20px 30px;}</style>
+<style type="text/css">body .header{background: #247eff;}body .header .logo{width: 150px; height: 75px}body .main-gallery .image .name{text-align: center; width: 250px;}body .main-gallery .image:hover{cursor: pointer;}body .main-gallery .image img{width: 250px; height: 350px;}body .main-gallery .image .bottom-panel{background: rgba(255, 255, 255, 0.8); width: 250px; position: absolute; height: 40px; bottom: 0;}body .main-gallery .image .bottom-panel input[type=checkbox]{margin: 10px; width: 20px; height: 20px;}body .main-gallery .row{margin: 0 auto; padding: 15px 0;}body .main-gallery .row + .row{padding-top: 0;}body .main-gallery.hide-bottom .bottom-panel{display: none;}body .main-gallery .controls{padding: 0 15px;}body .gallery{height: 90vh;}body .gallery .image-panel{text-align: center;}body .gallery .image-panel img{width: 250px; height: 350px; position: relative;}body .gallery .image-1, body .gallery .image-2{padding: 15px 0;}body .gallery .details{padding: 0 30px 20px 30px;}</style>
 <body class="container clearfix" onLoad="execute()">
 <div class="header"><img class="logo" src="img/matchlogo.png"></div>
 <div class="main-gallery container-fluid hide-bottom animated zoomIn panel">
     <div class="controls">
-        <button class="btn btn-primary select-to-compare" onclick="removehiddenClass()">Click to Select  <i class="fa fa-hand-pointer-o"></i></button>
-        <button class="btn btn-danger cancel-compare hidden" onclick="cancelCompare()"><i class="fa fa-times-circle"></i> Cancel</button>
-        <button class="btn btn-success pull-right compare hidden disabled" onclick="compare()" disabled="disabled">Compare <i class="fa fa-line-chart"></i></button>
+        <button class="btn btn-primary select-to-compare" onclick="removehiddenClass()">Click to Select <i class="fa fa-hand-pointer-o"></i></button>
+        <button class="btn btn-danger cancel-compare hidden" onclick="cancelCompare()"><i class="fa fa-times-circle"></i> Cancel </button>
+        <button class="btn btn-success pull-right compare hidden disabled" onclick="compare()" disabled="disabled"> Compare <i class="fa fa-line-chart"></i></button>
     </div>
     <div class="row row1"></div>
     <div class="row row2"></div>
 </div>
 <div class="gallery  container-fluid row hidden">
     <button class="btn btn-warning back animated fadeIn" onclick="back()"><i class="fa fa-reply"></i> Back</button>
-    <div><div class="col-md-6 col-lg-4 image-panel panel animated fadeInLeft">
+    <div>
+        <div class="col-md-6 col-lg-4 image-panel panel animated fadeInLeft">
             <h3 class="name row">A Bunderstood</h3>
             <div class="image-1"></div>
             <div class="details">
                 <div class="row"><label class="pull-left">Relationship Status:</label><span class="pull-right">Never Married</span></div>
-                <div class="row"><label class="pull-left">Ethnicity:</label><span
-                        class="pull-right">White / Caucasian</span></div>
-                <div class="row"><label class="pull-left">Body Type:</label><span class="pull-right">No Answer</span>
-                </div>
-                <div class="row"><label class="pull-left">Height:</label><span class="pull-right">5'6"(167cms)</span>
-                </div>
-                <div class="row"><label class="pull-left">Faith:</label><span
-                        class="pull-right">Christian / Catholic</span></div>
+                <div class="row"><label class="pull-left">Ethnicity:</label><span class="pull-right">White / Caucasian</span></div>
+                <div class="row"><label class="pull-left">Body Type:</label><span class="pull-right">No Answer</span></div>
+                <div class="row"><label class="pull-left">Height:</label><span class="pull-right">5'6"(167cms)</span></div>
+                <div class="row"><label class="pull-left">Faith:</label><spanclass="pull-right">Christian / Catholic</span></div>
             </div></div>
         <div class="col-md-6 col-lg-4 image-panel panel pull-right animated fadeInRight">
             <h3 class="name row">TX Destiny</h3>
             <div class="image-2"></div>
             <div class="details">
-                <div class="row"><label class="pull-left">Relationship Status:</label><span
-                        class="pull-right">Divorced</span></div>
-                <div class="row"><label class="pull-left">Ethnicity:</label><span
-                        class="pull-right">Latino / Hispanic</span></div>
-                <div class="row"><label class="pull-left">Body Type:</label><span
-                        class="pull-right">Athletic and toned</span></div>
-                <div class="row"><label class="pull-left">Height:</label><span class="pull-right"> 5'3"(160cms)</span>
-                </div>
+                <div class="row"><label class="pull-left">Relationship Status:</label><span class="pull-right">Divorced</span></div>
+                <div class="row"><label class="pull-left">Ethnicity:</label><span class="pull-right">Latino / Hispanic</span></div>
+                <div class="row"><label class="pull-left">Body Type:</label><span class="pull-right">Athletic and toned</span></div>
+                <div class="row"><label class="pull-left">Height:</label><span class="pull-right"> 5'3"(160cms)</span></div>
                 <div class="row"><label class="pull-left">Faith:</label><span class="pull-right">No Answer</span></div>
-            </div>
-        </div></div></div>
+            </div></div>
+    </div></div>
 <script type="text/javascript">
     var array = ['Rockstar35', 'MagicalGirl60', 'TexasRocks', 'ssssyu123', 'Randomfavourite', 'sweet16Heart', 'Quintessential', 'ChaoticSinger'];
     function createImage(data) {
-        return '<div class="image col-lg-3"><h3 class="name row">' + array[data - 1] + '</h3><img src="img/' + data + '.jpg"><span class="bottom-panel animated fadeInUp"><input id="' + data + '" type="checkbox" value="1" onClick="keepCount()"></span></div>';}
+        return '<div class="image col-lg-3 ' + data + '" onclick=select(this) ><h3 class="name row">' + array[data - 1] + '</h3><img src="img/' + data + '.jpg"><span class="bottom-panel animated fadeInUp"><input id="' + data + '" type="checkbox" onClick=checkbox() value="'+data+'"></span></div>'; }
     function createGallery(id) {
         var html = '';
         for (var i = 0; i < 4; i++)
@@ -64,6 +57,13 @@
     function execute() {
         $('.row1').html(createGallery(0));
         $('.row2').html(createGallery(4));    }
+    function select() {
+        var checkbox = $(event.currentTarget).find('input:checkbox');
+        checkbox.prop('checked', !checkbox.prop("checked"));
+        keepCount();}
+    function checkbox(){
+        event.stopPropagation() ;
+        keepCount();}
     function back() {
         $('.main-gallery').removeClass('hidden');
         $('.gallery').addClass('hidden');    }
@@ -77,7 +77,7 @@
         $('.select-to-compare').removeClass("hidden");
         $('.cancel-compare').addClass("hidden");
         $('.compare').addClass("hidden");
-        $('input:checkbox').removeAttr('checked');    }
+        $('input:checkbox').prop('checked',false);    }
     function keepCount() {
         if ($('input:checked').length === 2)
             $('.compare').removeClass('disabled').removeAttr('disabled');
